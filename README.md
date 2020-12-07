@@ -72,6 +72,13 @@ Deep_Learning.ipynb
 * imported table from postgres to Deep_Learning.ipynb using sqlalchemy
 * designed database schema and created "games" table in postgres
 
+Export 
+:-------------------------:
+![](Resources/export.png)|
+
+Import 
+:-------------------------:
+![](Resources/import.png)|
 
 ---
 ### Link to Presentation - Maria Castellanos, Nicholas Singh
