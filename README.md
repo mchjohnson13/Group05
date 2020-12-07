@@ -7,19 +7,19 @@
 
 ##### A. What Makes a video game successful ?
 
-###### - What genre of games is the most successful across all platforms ?
-###### - Do cross platforms games sell better than singular platforms ?
-###### - Do video games that are single player sell better than multiplayer ?
-###### - Do video games sell better digitally or as hard copies in stores ?
+##### - What genre of games is the most successful across all platforms ?
+##### - Do cross platforms games sell better than singular platforms ?
+##### - Do video games that are single player sell better than multiplayer ?
+##### - Do video games sell better digitally or as hard copies in stores ?
 
 ##### B. What is the best time to release a video game ? 
 
-###### - Do video games sell better in a certain time of the year ?
-###### - How do the holidays affect video game sales ?
-###### - How does world events affect video games ? 
+##### - Do video games sell better in a certain time of the year ?
+##### - How do the holidays affect video game sales ?
+##### - How does world events affect video games ? 
 
 ##### C. How does demographic / location effect video game sales?
 
-###### - What part of the world plays / purchases the most games ?
-###### - What demographic plays / purchases the most video games ?
+##### - What part of the world plays / purchases the most games ?
+##### - What demographic plays / purchases the most video games ?
 
