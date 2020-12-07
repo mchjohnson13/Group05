@@ -1,5 +1,7 @@
 
 
+NOTE: Joseph Thompson's branch is titled "New_Branch"
+
 # Group 05 Final Project
 ## Project Outilne
 ---
