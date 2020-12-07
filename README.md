@@ -1,5 +1,7 @@
 
 
+NOTE: Joseph Thompson's branch is titled "New_Branch"
+
 # Group 05 Final Project
 ## Project Outilne
 ---
@@ -48,6 +50,7 @@ With the increasing popularity and plethora of available games, our group will t
   - Meet
 ---
 ### Machine Learning Model - Joseph Thompson
+
 
 Metacritic_Scraping_Pipeline.ipynb
 * scraped data from metacritic.com
