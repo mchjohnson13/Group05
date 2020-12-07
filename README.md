@@ -49,6 +49,7 @@ With the increasing popularity and plethora of available games, our group will t
 ---
 ### Machine Learning Model - Joseph Thompson
 
+
 Metacritic_Scraping_Pipeline.ipynb
 * scraped data from metacritic.com
 * exported data to a csv file for later use.
