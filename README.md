@@ -61,9 +61,19 @@ C. How does demographic / location effect video game sales?
 * scaled data 
 * created a deep artificial neural network
 ---
+
 ### Database (Blake Kennedy)
 * Imported table from postgres to [Deep_Learning.ipynb](./Notebooks/Deep_Learning.ipynb) using sqlalchemy
 * Designed database schema ([schema.sql](.Database/schema.sql)) and created "games" table in postgres
+
+Export 
+:-------------------------:
+![](Resources/export.png)|
+
+Import 
+:-------------------------:
+![](Resources/import.png)|
+
 ---
 
 ### GitHub (Michelle Johnson)
