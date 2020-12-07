@@ -48,8 +48,28 @@ With the increasing popularity and plethora of available games, our group will t
   - Meet
 ---
 ### Machine Learning Model - Joseph Thompson
+
+Metacritic_Scraping_Pipeline.ipynb
+* scraped data from metacritic.com
+* exported data to a csv file for later use.
+
+Exploratory_Data_Analysis.ipynb
+* cleaned data 
+* merged our scraped data as well as the game data from vgsales.csv
+* exported data using sqlalchemy to postgres
+
+Deep_Learning.ipynb
+* performed feature engineering 
+* scaled data 
+* created a deep artificial neural network
+
+
 ---
 ### Database - Blake Kennedy
+* imported table from postgres to Deep_Learning.ipynb using sqlalchemy
+* designed database schema and created "games" table in postgres
+
+
 ---
 ### Link to Presentation - Maria Castellanos, Nicholas Singh
 ### Link to Dashboard
