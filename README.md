@@ -17,3 +17,9 @@
 ###### - Do video games sell better in a certain time of the year ?
 ###### - How do the holidays affect video game sales ?
 ###### - How does world events affect video games ? 
+
+##### C. How does demographic / location effect video game sales?
+
+###### - What part of the world plays / purchases the most games ?
+###### - What demographic plays / purchases the most video games ?
+
