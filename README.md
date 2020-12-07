@@ -1,3 +1,5 @@
+
+
 # Group 05 Final Project
 ## Project Outilne
 ---
@@ -12,9 +14,30 @@ With the increasing popularity and plethora of available games, our group will t
 1.	Chikhani, Riad. “The History Of Gaming: An Evolving Community.” TechCrunch, TechCrunch, 31 Oct. 2015, techcrunch.com/2015/10/31/the-history-of-gaming-an-evolving-community/. 
 2.	Tim Wijman. “2020 Global Games Market Report”. NewZoo. Accessed 05 December 2020.
 
-#### Reason for Selection
-#### Description of Source Data
-#### Questions to Answer
+#### Reason for Selection (Nicholas Singh)
+
+##### The reason we selected this particular topic is in order to truly understand the impact of the multi-billion dollar gaming industry and how this knowledge can benefit video game developers who are attempting to successfully create and release a video game.
+
+#### Questions to Answer (Nicholas Singh)
+
+#### A. What Makes a video game successful ?
+
+##### - What genre of games is the most successful across all platforms ?
+##### - Do cross platforms games sell better than singular platforms ?
+##### - Do video games that are single player sell better than multiplayer ?
+##### - Do video games sell better digitally or as hard copies in stores ?
+
+#### B. What is the best time to release a video game ? 
+
+##### - Do video games sell better in a certain time of the year ?
+##### - How do the holidays affect video game sales ?
+##### - How does world events affect video games ? 
+
+#### C. How does demographic / location effect video game sales?
+
+##### - What part of the world plays / purchases the most games ?
+##### - What demographic plays / purchases the most video games ?
+
 ---
 ### Communication protocols
 * Slack dms
@@ -30,4 +53,5 @@ With the increasing popularity and plethora of available games, our group will t
 ---
 ### Link to Presentation - Maria Castellanos, Nicholas Singh
 ### Link to Dashboard
+>>>>>>> main
 
