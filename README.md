@@ -5,6 +5,13 @@
 - Machine Learning & Data Scrape: Joseph Thompson (Note: Branch name is "New_Branch")
 - Database: Blake Kennedy
 - GitHub: Michelle Johnson
+
+#### Segment 2
+- Presentation: Maria Castellanos, Nicholas Singh
+- Machine Learning & Data Scrape: Joseph Thompson (Note: Branch name is "New_Branch")
+- Database: Blake Kennedy, Michelle Johnson
+- Dashboard: Blake Kennedy
+- GitHub: Michelle Johnson
 ---
 ## Project Outilne
 #### Topic & Background (Maria Castellanos)
@@ -42,7 +49,7 @@ C. How does demographic / location effect video game sales?
 ---
 ### Communication protocols
 * Slack
-  - Comunication outside of Zoom meetings are done through Slack. This is used to give general updates about where we're at on our specific portions and set up meeting times, as well as to alert others about commit/merges to the repository.
+  - Comunication outside of Zoom meetings are done through Slack. This is used to give general updates about where we are at on our specific portions and set up meeting times, as well as to alert others about commit/merges to the repository.
 * Zoom
   - Any group meetings outside of the regularly scheduled class are done through Zoom meetings.
 ---
@@ -62,9 +69,12 @@ C. How does demographic / location effect video game sales?
 * created a deep artificial neural network
 ---
 
-### Database (Blake Kennedy)
+### Database (Blake Kennedy, Michelle Johnson)
 * Imported table from postgres to [Deep_Learning.ipynb](./Notebooks/Deep_Learning.ipynb) using sqlalchemy
-* Designed database ERD and schema ([schema.sql](.Database/schema.sql))
+* Designed database ([schema](.Database/schema.sql))
+  
+  #### ERD
+  ![ERD](.Database/ERD.png) 
 
 Export 
 :-------------------------:
@@ -73,6 +83,10 @@ Export
 Import 
 :-------------------------:
 ![](Resources/import.png)|
+
+---
+
+### Dashboard (Blake Kennedy)
 
 ---
 
