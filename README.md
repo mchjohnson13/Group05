@@ -71,10 +71,10 @@ C. How does demographic / location effect video game sales?
 
 ### Database (Blake Kennedy, Michelle Johnson)
 * Imported table from postgres to [Deep_Learning.ipynb](./Notebooks/Deep_Learning.ipynb) using sqlalchemy
-* Designed database ([schema](.Database/schema.sql))
+* Designed database ([schema](./Database/schema.sql))
   
   #### ERD
-  ![ERD](.Database/ERD.png) 
+  ![ERD](./Database/ERD.png) 
 
 Export 
 :-------------------------:
