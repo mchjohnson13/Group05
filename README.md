@@ -81,7 +81,8 @@ found in the notebook itself written in markdown language inbetween the code
 and in code comments.
 
 Machine Learning Description:
-* To make accurate predictions using the model we did feature engineering on the
+
+To make accurate predictions using the model we did feature engineering on the
 release date column to get new features for year and month. The month a game is
 released may have some correlation with the overall sales. Then we cleaned the dataset
 and used ensemble learning to interpolate missing values. Our data was very dirty so
