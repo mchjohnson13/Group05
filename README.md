@@ -1,50 +1,33 @@
 # Predicting the Future of Gaming
-### Responisbilites
-#### Segment 1
-- Presentation: Maria Castellanos, Nicholas Singh
-- Machine Learning & Data Scrape: Joseph Thompson (Note: Branch name is "New_Branch")
-- Database: Blake Kennedy
-- GitHub: Michelle Johnson
-
-#### Segment 2
-- Presentation: Maria Castellanos, Nicholas Singh
-- Machine Learning & Data Scrape: Joseph Thompson (Note: Branch name is "New_Branch")
-- Database: Blake Kennedy, Michelle Johnson
-- Dashboard: Blake Kennedy
-- GitHub: Michelle Johnson
----
 ## Project Outilne
-#### Topic & Background (Maria Castellanos)
+#### Topic & Background
+Video games have been around since the mid-1900s, but it was not until milestones such as the release of PacMan and Nintendo’s creation of Donkey Kong in 80s that the industry really started to boom. Through the eras of arcade gaming, the development of multiplayer games, and then to the creation of home gaming consoles -the population of global players has steadily continued to rise [1]. In 2020 alone, the gaming industry has yielded a total revenue of 159.3 billion -up 9.3% from 2019. It has also accounted for 2.7 billion players globally -up 5.3% from 2019. In fact, it is forecasted that the gaming market revenue will grow to $200.8 billion and the global player count will rise to 3.07 billion by 2023 [2]. 
 
-Video games have been around since the mid-1900s, but it was not until milestones such as the release of PacMan and Nintendo’s creation of Donkey Kong in 80s that the industry really started to boom. Through the eras of arcade gaming, the development of multiplayer games, and then to the creation of home gaming consoles -the population of global players has steadily continued to rise [1]. In 2020 alone, the gaming industry has yielded a total revenue of 159.3 billion -up 9.3% from 2019. It has also accounted for 2.7 billion players globally -up 5.3% from 2019. In fact, it is forecasted that the gaming market revenue will grow to $200.8 billion and the global player count will rise to 3.07 billion by 2023 [2].
+#### Purpose
+With the increasing popularity and plethora of available games, our group will trend historical gaming data to analyze what makes a game successful. By doing so, it becomes possible to aid publishers and developers in releasing products aligned with current and future consumer interests. 
+1.	Chikhani, Riad. “The History Of Gaming: An Evolving Community.” TechCrunch, TechCrunch, 31 Oct. 2015, techcrunch.com/2015/10/31/the-history-of-gaming-an-evolving-community/. 
 
-#### Purpose (Maria Castellanos)
-
-With the increasing popularity and plethora of available games, our group will trend historical gaming data to analyze what makes a game successful. By doing so, it becomes possible to aid publishers and developers in releasing products aligned with current and future consumer interests.
-
-1.	Chikhani, Riad. “The History Of Gaming: An Evolving Community.” TechCrunch, TechCrunch, 31 Oct. 2015, techcrunch.com/2015/10/31/the-history-of-gaming-an-evolving-community/.
 2.	Tim Wijman. “2020 Global Games Market Report”. NewZoo. Accessed 05 December 2020.
 
-### Reason for Selection (Nicholas Singh)
-
+### Reason for Selection
 The reason we selected this particular topic is in order to truly understand the impact of the multi-billion dollar gaming industry and how this knowledge can benefit video game developers who are attempting to successfully create and release a video game.
 
-### Questions to Answer (Nicholas Singh)
+### Questions to Answer
 
-A. What Makes a video game successful ?
-- What genre of games is the most successful across all platforms ?
-- Do cross platforms games sell better than singular platforms ?
-- Do video games that are single player sell better than multiplayer ?
-- Do video games sell better digitally or as hard copies in stores ?
+A. What Makes a video game successful?
+- What genre of games is the most successful across all platforms?
+- Do cross platforms games sell better than singular platforms?
+- Do video games that are single player sell better than multiplayer?
+- Do video games sell better digitally or as hard copies in stores?
 
-B. What is the best time to release a video game ?
-- Do video games sell better in a certain time of the year ?
-- How do the holidays affect video game sales ?
-- How does world events affect video games ?
+B. What is the best time to release a video game? 
+- Do video games sell better in a certain time of the year?
+- How do the holidays affect video game sales?
+- How does world events affect video games? 
 
 C. How does demographic / location effect video game sales?
-- What part of the world plays / purchases the most games ?
-- What demographic plays / purchases the most video games ?
+- What part of the world plays / purchases the most games?
+- What demographic plays / purchases the most video games?
 
 ---
 ### Communication protocols
@@ -53,7 +36,7 @@ C. How does demographic / location effect video game sales?
 * Zoom
   - Any group meetings outside of the regularly scheduled class are done through Zoom meetings.
 ---
-### Machine Learning Model and Data Scrape (Joseph Thompson)
+### Machine Learning Model and Data Scrape
 [Metacritic_ETL.ipynb](./Notebooks/Metacritic_Scraping_Pipeline.ipynb)
 * scraped data from metacritic.com
 * performed ETL on the data and imported it into Postgres using SQL Alchemy.
@@ -111,12 +94,12 @@ To account for this, I dropped all the games that could be considered outliers f
 each category of Sales, yet still was not getting great results.  I opted to see if I
 could make accurate predictions for just one region, North America Sales (NA_Sales). The
 results were far better, supporting my hypothesis but the model as a whole was still
-not a great predictor.
+not a great predictor.  
 
 ---
 
-### Database (Blake Kennedy, Michelle Johnson)
-* Imported table from postgres to [Deep_Learning_Model.ipynb](./Notebooks/Deep_Learning_Model.ipynb) using sqlalchemy
+### Database
+* Imported table from postgres to [Deep_Learning.ipynb](./Notebooks/Deep_Learning.ipynb) using sqlalchemy
 * Designed database ([schema](./Database/schema.sql))
 
   #### ERD
@@ -131,12 +114,76 @@ Import
 ![](Resources/import.png)|
 
 ---
-
-### Dashboard (Blake Kennedy)
+### Dashboard
 
 ---
 
-### GitHub (Michelle Johnson)
-* Created the repository and branches.
-* Made formatting edits in readme for continuity.
-* Added links to files.
+## Responisbilites
+---
+### Blake Kennedy
+---
+#### Segment 1
+* Database
+  * Imported table from postgres to [Deep_Learning.ipynb](./Notebooks/Deep_Learning.ipynb) using sqlalchemy
+  * Designed database ([schema](./Database/schema.sql))
+#### Segment 2
+* Database
+* Dashboard
+#### Segment 3
+#### Segment 4
+---
+### Joseph Thompson (NOTE: Branch name is "New_Branch")
+---
+#### Segment 1
+[Metacritic_Scraping_Pipeline.ipynb](./Notebooks/Metacritic_Scraping_Pipeline.ipynb)
+* scraped data from metacritic.com
+* exported data to a csv file for later use.
+
+[Exploratory_Data_Analysis.ipynb](./Notebooks/Exploratory_Data_Analysis.ipynb)
+* cleaned data 
+* merged our scraped data as well as the game data from vgsales.csv
+* exported data using sqlalchemy to postgres
+
+[Deep_Learning.ipynb](./Notebooks/Deep_Learning.ipynb)
+* performed feature engineering 
+* scaled data 
+* created a deep artificial neural network
+#### Segment 2
+#### Segment 3
+#### Segment 4
+---
+### Maria Castellanos
+---
+#### Segment 1
+* Topic & Background
+* Purpose
+#### Segment 2
+* Slides and Presentation
+#### Segment 3
+#### Segment 4
+---
+### Michelle Johnson
+---
+#### Segment 1
+* GitHub
+  * Created the repository and branches.
+  * Made formatting edits in readme for continuity.
+  * Added links to files.
+#### Segment 2
+* GitHub
+* Database
+  * Updated schema and ERD with Blake
+  * Created created queries file.
+#### Segment 3
+#### Segment 4
+---
+### Nicholas Singh
+---
+#### Segment 1
+* Reason for Selection
+* Questions to Answer
+#### Segment 2
+* Slides and Presentation
+#### Segment 3
+#### Segment 4
+---
