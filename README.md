@@ -6,6 +6,7 @@ Video games have been around since the mid-1900s, but it was not until milestone
 #### Purpose
 With the increasing popularity and plethora of available games, our group will trend historical gaming data to analyze what makes a game successful. By doing so, it becomes possible to aid publishers and developers in releasing products aligned with current and future consumer interests. 
 1.	Chikhani, Riad. “The History Of Gaming: An Evolving Community.” TechCrunch, TechCrunch, 31 Oct. 2015, techcrunch.com/2015/10/31/the-history-of-gaming-an-evolving-community/. 
+
 2.	Tim Wijman. “2020 Global Games Market Report”. NewZoo. Accessed 05 December 2020.
 
 ### Reason for Selection
@@ -100,24 +101,22 @@ not a great predictor.
 ### Database
 * Imported table from postgres to [Deep_Learning.ipynb](./Notebooks/Deep_Learning.ipynb) using sqlalchemy
 * Designed database ([schema](./Database/schema.sql))
-  
-  #### ERD
-  ![ERD](./Database/ERD.png) 
 
-Export 
+  #### ERD
+  ![ERD](./Database/ERD.png)
+
+Export
 :-------------------------:
 ![](Resources/export.png)|
 
-Import 
+Import
 :-------------------------:
 ![](Resources/import.png)|
 
 ---
-
 ### Dashboard
 
 ---
-
 
 ## Responisbilites
 ---
