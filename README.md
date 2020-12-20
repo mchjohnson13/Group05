@@ -16,13 +16,13 @@
 ## Project Outilne
 #### Topic & Background (Maria Castellanos)
 
-Video games have been around since the mid-1900s, but it was not until milestones such as the release of PacMan and Nintendo’s creation of Donkey Kong in 80s that the industry really started to boom. Through the eras of arcade gaming, the development of multiplayer games, and then to the creation of home gaming consoles -the population of global players has steadily continued to rise [1]. In 2020 alone, the gaming industry has yielded a total revenue of 159.3 billion -up 9.3% from 2019. It has also accounted for 2.7 billion players globally -up 5.3% from 2019. In fact, it is forecasted that the gaming market revenue will grow to $200.8 billion and the global player count will rise to 3.07 billion by 2023 [2]. 
+Video games have been around since the mid-1900s, but it was not until milestones such as the release of PacMan and Nintendo’s creation of Donkey Kong in 80s that the industry really started to boom. Through the eras of arcade gaming, the development of multiplayer games, and then to the creation of home gaming consoles -the population of global players has steadily continued to rise [1]. In 2020 alone, the gaming industry has yielded a total revenue of 159.3 billion -up 9.3% from 2019. It has also accounted for 2.7 billion players globally -up 5.3% from 2019. In fact, it is forecasted that the gaming market revenue will grow to $200.8 billion and the global player count will rise to 3.07 billion by 2023 [2].
 
 #### Purpose (Maria Castellanos)
 
-With the increasing popularity and plethora of available games, our group will trend historical gaming data to analyze what makes a game successful. By doing so, it becomes possible to aid publishers and developers in releasing products aligned with current and future consumer interests. 
+With the increasing popularity and plethora of available games, our group will trend historical gaming data to analyze what makes a game successful. By doing so, it becomes possible to aid publishers and developers in releasing products aligned with current and future consumer interests.
 
-1.	Chikhani, Riad. “The History Of Gaming: An Evolving Community.” TechCrunch, TechCrunch, 31 Oct. 2015, techcrunch.com/2015/10/31/the-history-of-gaming-an-evolving-community/. 
+1.	Chikhani, Riad. “The History Of Gaming: An Evolving Community.” TechCrunch, TechCrunch, 31 Oct. 2015, techcrunch.com/2015/10/31/the-history-of-gaming-an-evolving-community/.
 2.	Tim Wijman. “2020 Global Games Market Report”. NewZoo. Accessed 05 December 2020.
 
 ### Reason for Selection (Nicholas Singh)
@@ -37,10 +37,10 @@ A. What Makes a video game successful ?
 - Do video games that are single player sell better than multiplayer ?
 - Do video games sell better digitally or as hard copies in stores ?
 
-B. What is the best time to release a video game ? 
+B. What is the best time to release a video game ?
 - Do video games sell better in a certain time of the year ?
 - How do the holidays affect video game sales ?
-- How does world events affect video games ? 
+- How does world events affect video games ?
 
 C. How does demographic / location effect video game sales?
 - What part of the world plays / purchases the most games ?
@@ -54,33 +54,78 @@ C. How does demographic / location effect video game sales?
   - Any group meetings outside of the regularly scheduled class are done through Zoom meetings.
 ---
 ### Machine Learning Model and Data Scrape (Joseph Thompson)
-[Metacritic_Scraping_Pipeline.ipynb](./Notebooks/Metacritic_Scraping_Pipeline.ipynb)
+[Metacritic_ETL.ipynb](./Notebooks/Metacritic_Scraping_Pipeline.ipynb)
 * scraped data from metacritic.com
+* performed ETL on the data and imported it into Postgres using SQL Alchemy.
 * exported data to a csv file for later use.
 
-[Exploratory_Data_Analysis.ipynb](./Notebooks/Exploratory_Data_Analysis.ipynb)
-* cleaned data 
+[Metacritic_Comment_Scraping.ipynb](./Notebooks/Metacritic_Scraping_Pipeline.ipynb)
+* scraped review data from metacritic.com
+* performed ETL on the data and imported it into Postgres using SQL Alchemy.
+* exported data to a tab-delimited csv file for later use.
+
+[Exploratory_Analysis.ipynb](./Notebooks/Exploratory_Analysis.ipynb)
+* cleaned data
 * merged our scraped data as well as the game data from vgsales.csv
 * exported data using sqlalchemy to postgres
 
-[Deep_Learning.ipynb](./Notebooks/Deep_Learning.ipynb)
-* performed feature engineering 
-* scaled data 
-* created a deep artificial neural network
+[Deep_Learning_Model.ipynb](./Notebooks/Deep_Learning_Model.ipynb)
+* performed feature engineering
+* used Random Forest to interpolate missing values in the dataset.
+* scaled the data for supervised and unsupervised Learning
+* clustered data using KMeans
+* created a deep artificial neural network to predict Sales.
+
+NOTE: Descriptions of the machine learning deliverables process can be
+found in the notebook itself written in markdown language inbetween the code
+and in code comments.
+
+Machine Learning Description:
+* To make accurate predictions using the model we did feature engineering on the
+release date column to get new features for year and month. The month a game is
+released may have some correlation with the overall sales. Then we cleaned the dataset
+and used ensemble learning to interpolate missing values. Our data was very dirty so
+I used unsupervised learning to try to glean insights and patterns about our data.
+The takeaway was that there is only a loose correlation between reviews and Sales.
+I opted to not include Developer and Producers into the deep learning model because
+even after binning there were simply too many categories to one hot encode into the
+model.
+
+I knew the data was dirty and therefore would take some fiddling with input data
+to arrive at a good model so I incorporated OOP (Object-Oriented Programming) to
+make this process less cluttered in the notebook. Data is then split within one of
+the DeepLearning class's methods.
+
+I am choosing a neural network, because they are adept at picking up subtle correlations between combinations of features and the label. Our data is attempting to predict a label off of features that appear only loosing correlated with Sales. My hope is that the deep learning model can pick up subtle patterns from all this review data along with our other features to make accurate predictions about sales. A limitation of this Model
+will be that I cant fully understand what is happening inside the model. I think
+this will be outweighed however by the benefits relating to the patterns and relationships
+it will be able to pick up.
+
+I determined that for several reasons this data may be unfit to predict sales on.
+The Sales data is biased in favor of games that have been out longer because they
+have more time to accumulate sales. Most games in the data has near zero sales, with
+a not insignificant proportion of games selling much more. Our model therefore can
+be trained to be a good predictor of games perhaps in one range or another but not both.
+To account for this, I dropped all the games that could be considered outliers for
+each category of Sales, yet still was not getting great results.  I opted to see if I
+could make accurate predictions for just one region, North America Sales (NA_Sales). The
+results were far better, supporting my hypothesis but the model as a whole was still
+not a great predictor.
+
 ---
 
 ### Database (Blake Kennedy, Michelle Johnson)
-* Imported table from postgres to [Deep_Learning.ipynb](./Notebooks/Deep_Learning.ipynb) using sqlalchemy
+* Imported table from postgres to [Deep_Learning_Model.ipynb](./Notebooks/Deep_Learning_Model.ipynb) using sqlalchemy
 * Designed database ([schema](./Database/schema.sql))
-  
-  #### ERD
-  ![ERD](./Database/ERD.png) 
 
-Export 
+  #### ERD
+  ![ERD](./Database/ERD.png)
+
+Export
 :-------------------------:
 ![](Resources/export.png)|
 
-Import 
+Import
 :-------------------------:
 ![](Resources/import.png)|
 
