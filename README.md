@@ -172,7 +172,7 @@ Import
 #### Segment 2
 * GitHub
 * Database
-  * Updated schema and ERD with Blake
+  * Updated schema and ERD with Blake.
   * Created created queries file.
 #### Segment 3
 #### Segment 4
