@@ -158,7 +158,7 @@ Import
 * Topic & Background: Introduced prevalance of gaming and evidence of booming market.
 * Purpose: Introduced the possibility of using historical gaming data for the the development and production of future games.
 #### Segment 2
-* Slides and Presentation
+* Slides and Presentation: Began first phase of presentation organization and editing.
 #### Segment 3
 #### Segment 4
 ---
