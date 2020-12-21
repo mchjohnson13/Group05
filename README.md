@@ -128,7 +128,9 @@ Import
   * Designed database ([schema](./Database/schema.sql))
 #### Segment 2
 * Database
+  * Drafted various ERD and updated schema with Michelle
 * Dashboard
+  * Created dashboard blueprint with tableau
 #### Segment 3
 #### Segment 4
 ---
