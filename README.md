@@ -172,7 +172,7 @@ Import
 #### Segment 2
 * GitHub
 * Database
-  * Updated schema and ERD with Blake
+  * Updated schema and ERD with Blake.
   * Created created queries file.
 #### Segment 3
 #### Segment 4
@@ -182,8 +182,10 @@ Import
 #### Segment 1
 * Reason for Selection
 * Questions to Answer
+
 #### Segment 2
 * Slides and Presentation
+    * Added multiple images along with multiple slides explaining the processes behind the data source, exploration and analysis.
 #### Segment 3
 #### Segment 4
 ---
