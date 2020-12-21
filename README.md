@@ -155,8 +155,8 @@ Import
 ### Maria Castellanos
 ---
 #### Segment 1
-* Topic & Background
-* Purpose
+* Topic & Background: Introduced prevalance of gaming and evidence of booming market.
+* Purpose: Introduced the possibility of using historical gaming data for the the development and production of future games.
 #### Segment 2
 * Slides and Presentation
 #### Segment 3
