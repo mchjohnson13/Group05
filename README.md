@@ -182,8 +182,10 @@ Import
 #### Segment 1
 * Reason for Selection
 * Questions to Answer
+
 #### Segment 2
 * Slides and Presentation
+    * Added multiple images along with multiple slides expaling the processes behind the data source, exploration and analysis
 #### Segment 3
 #### Segment 4
 ---
