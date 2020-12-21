@@ -1,11 +1,11 @@
 # Predicting the Future of Gaming
 ## Project Outline
 #### Topic & Background
-Video games have been around since the mid-1900s, but it was not until milestones such as the release of PacMan and Nintendo’s creation of Donkey Kong in 80s that the industry really started to boom. Through the eras of arcade gaming, the development of multiplayer games, and then to the creation of home gaming consoles -the population of global players has steadily continued to rise [1]. In 2020 alone, the gaming industry has yielded a total revenue of 159.3 billion -up 9.3% from 2019. It has also accounted for 2.7 billion players globally -up 5.3% from 2019. In fact, it is forecasted that the gaming market revenue will grow to $200.8 billion and the global player count will rise to 3.07 billion by 2023 [2]. 
+Video games have been around since the mid-1900s, but it was not until milestones such as the release of PacMan and Nintendo’s creation of Donkey Kong in 80s that the industry really started to boom. Through the eras of arcade gaming, the development of multiplayer games, and then to the creation of home gaming consoles -the population of global players has steadily continued to rise [1]. In 2020 alone, the gaming industry has yielded a total revenue of 159.3 billion -up 9.3% from 2019. It has also accounted for 2.7 billion players globally -up 5.3% from 2019. In fact, it is forecasted that the gaming market revenue will grow to $200.8 billion and the global player count will rise to 3.07 billion by 2023 [2].
 
 #### Purpose
-With the increasing popularity and plethora of available games, our group will trend historical gaming data to analyze what makes a game successful. By doing so, it becomes possible to aid publishers and developers in releasing products aligned with current and future consumer interests. 
-1.	Chikhani, Riad. “The History Of Gaming: An Evolving Community.” TechCrunch, TechCrunch, 31 Oct. 2015, techcrunch.com/2015/10/31/the-history-of-gaming-an-evolving-community/. 
+With the increasing popularity and plethora of available games, our group will trend historical gaming data to analyze what makes a game successful. By doing so, it becomes possible to aid publishers and developers in releasing products aligned with current and future consumer interests.
+1.	Chikhani, Riad. “The History Of Gaming: An Evolving Community.” TechCrunch, TechCrunch, 31 Oct. 2015, techcrunch.com/2015/10/31/the-history-of-gaming-an-evolving-community/.
 
 2.	Tim Wijman. “2020 Global Games Market Report”. NewZoo. Accessed 05 December 2020.
 
@@ -20,10 +20,10 @@ A. What Makes a video game successful?
 - Do video games that are single player sell better than multiplayer?
 - Do video games sell better digitally or as hard copies in stores?
 
-B. What is the best time to release a video game? 
+B. What is the best time to release a video game?
 - Do video games sell better in a certain time of the year?
 - How do the holidays affect video game sales?
-- How does world events affect video games? 
+- How does world events affect video games?
 
 C. How does demographic / location effect video game sales?
 - What part of the world plays / purchases the most games?
@@ -140,15 +140,27 @@ Import
 * exported data to a csv file for later use.
 
 [Exploratory_Data_Analysis.ipynb](./Notebooks/Exploratory_Data_Analysis.ipynb)
-* cleaned data 
+* cleaned data
 * merged our scraped data as well as the game data from vgsales.csv
 * exported data using sqlalchemy to postgres
 
 [Deep_Learning.ipynb](./Notebooks/Deep_Learning.ipynb)
-* performed feature engineering 
-* scaled data 
+* performed feature engineering
+* scaled data
 * created a deep artificial neural network
+
 #### Segment 2
+[Metacritic_Comment_Scraping](./Notebooks/Metacritic_Comment_Scraping)
+* added another scraping script to gather review data for later use with NLP.
+
+* altered the scraping scripts to upload into the new Postgres database schema.
+* added unsupervised clustering models to Deep_Learning_Model.ipynb
+* Used Random Forest to interpolate missing values in the MI dataset.
+* implemented object-oriented programming into Keras deep learning models and clustering models
+* wrote commentary into Deep_Learning_Model.ipynb that explains preprocessing, feature selection, why I chose the models i did, and all other details relating to the machine learning deliverable.
+* Wrote an overview of the Machine Learning sections of the project in the README.md file that meet the requirements of the deliverable in conjunction with the notes written in with the code.
+
+
 #### Segment 3
 #### Segment 4
 ---
