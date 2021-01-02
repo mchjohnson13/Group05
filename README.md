@@ -37,12 +37,12 @@ C. How does demographic / location effect video game sales?
   - Any group meetings outside of the regularly scheduled class are done through Zoom meetings.
 ---
 ### Machine Learning Model and Data Scrape
-[Metacritic_ETL.ipynb](./Notebooks/Metacritic_Scraping_Pipeline.ipynb)
+[Metacritic_ETL.ipynb](./Notebooks/Metacritic_ETL.ipynb)
 * scraped data from metacritic.com
 * performed ETL on the data and imported it into Postgres using SQL Alchemy.
 * exported data to a csv file for later use.
 
-[Metacritic_Comment_Scraping.ipynb](./Notebooks/Metacritic_Scraping_Pipeline.ipynb)
+[Metacritic_Comment_Scraping.ipynb](./Notebooks/Metacritic_Comment_Scraping.ipynb)
 * scraped review data from metacritic.com
 * performed ETL on the data and imported it into Postgres using SQL Alchemy.
 * exported data to a tab-delimited csv file for later use.
@@ -99,7 +99,7 @@ not a great predictor.
 ---
 
 ### Database
-* Imported table from postgres to [Deep_Learning.ipynb](./Notebooks/Deep_Learning.ipynb) using sqlalchemy
+* Imported table from postgres to [Deep_Learning_Model.ipynb](./Notebooks/Deep_Learning_Model.ipynb) using sqlalchemy
 * Designed database ([schema](./Database/schema.sql))
 
   #### ERD
@@ -124,7 +124,7 @@ Import
 ---
 #### Segment 1
 * Database
-  * Imported table from postgres to [Deep_Learning.ipynb](./Notebooks/Deep_Learning.ipynb) using sqlalchemy
+  * Imported table from postgres to [Deep_Learning_Model.ipynb](./Notebooks/Deep_Learning_Model.ipynb) using sqlalchemy
   * Designed database ([schema](./Database/schema.sql))
 #### Segment 2
 * Database
@@ -141,18 +141,18 @@ Import
 * scraped data from metacritic.com
 * exported data to a csv file for later use.
 
-[Exploratory_Data_Analysis.ipynb](./Notebooks/Exploratory_Data_Analysis.ipynb)
+[Exploratory_Analysis.ipynb](./Notebooks/Exploratory_Analysis.ipynb)
 * cleaned data
 * merged our scraped data as well as the game data from vgsales.csv
 * exported data using sqlalchemy to postgres
 
-[Deep_Learning.ipynb](./Notebooks/Deep_Learning.ipynb)
+[Deep_Learning_Model.ipynb](./Notebooks/Deep_Learning_Model.ipynb)
 * performed feature engineering
 * scaled data
 * created a deep artificial neural network
 
 #### Segment 2
-[Metacritic_Comment_Scraping](./Notebooks/Metacritic_Comment_Scraping)
+[Metacritic_Comment_Scraping](./Notebooks/Metacritic_Comment_Scraping.ipynb)
 * added another scraping script to gather review data for later use with NLP.
 
 * altered the scraping scripts to upload into the new Postgres database schema.
