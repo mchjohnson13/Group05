@@ -186,6 +186,44 @@ Import
 
 
 #### Segment 3
+
+I was responsible for all the code in these notebooks.
+
+I was also responsible for all the text (and code) under the machine learning portion of the repository.
+
+[Metacritic_ETL.ipynb](./Notebooks/Metacritic_Scraping_Pipeline.ipynb)
+* scraped data from metacritic.com
+* performed ETL on the data and imported it into Postgres using SQL Alchemy.
+* exported data to a csv file for later use.
+
+[Metacritic_Comment_Scraping.ipynb](./Notebooks/Metacritic_Scraping_Pipeline.ipynb)
+* scraped review data from metacritic.com
+* performed ETL on the data and imported it into Postgres using SQL Alchemy.
+* exported data to a tab-delimited csv file for later use.
+
+[Exploratory_Analysis.ipynb](./Notebooks/Exploratory_Analysis.ipynb)
+* cleaned data
+* merged our scraped data as well as the game data from vgsales.csv
+* exported data using sqlalchemy to postgres
+
+[Predicting_Sales.ipynb](./Notebooks/Deep_Learning_Model.ipynb)
+* performed feature engineering
+* used Random Forest to interpolate missing values in the dataset.
+* scaled the data for supervised and unsupervised Learning
+* clustered data using KMeans
+* created a deep artificial neural network to predict Sales.
+
+[Clustering_Class_Module.py](./Notebooks/Clustering_Class_Module.py)
+* .py file containing the class for clustering features using KMeans
+* takes in X and y and uses a set of methods to choose the best k value and cluster the model
+* Is imported into Predicting_Sales.ipynb.
+
+[Keras_Class_Module.py](./Notebooks/Keras_Class_Module.py)
+* .py file containing the class for instantiating a deep neural network.
+* takes in X an y and uses a set of methods to split the data into training/testing sets as well as scale the data and create a model which we then make predictions off of.
+* Is imported into Predicting_Sales.ipynb.
+
+
 #### Segment 4
 ---
 ### Maria Castellanos
