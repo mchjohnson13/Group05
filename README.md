@@ -65,7 +65,7 @@ C. How does demographic / location effect video game sales?
 
 NOTE: Descriptions of the machine learning deliverables process is provided in code commments and markdown.
 
-####Machine Learning Description:
+#### Machine Learning Description:
 
 To make accurate predictions using the model we did feature engineering on the
 release date column to get new features for year and month. The month a game is
