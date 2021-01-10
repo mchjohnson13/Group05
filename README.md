@@ -28,21 +28,14 @@ B. What is the best time to release a video game?
 C. How does demographic / location effect video game sales?
 - What part of the world plays / purchases the most games?
 - What demographic plays / purchases the most video games?
-
----
-### Communication protocols
-* Slack
-  - Comunication outside of Zoom meetings are done through Slack. This is used to give general updates about where we are at on our specific portions and set up meeting times, as well as to alert others about commit/merges to the repository.
-* Zoom
-  - Any group meetings outside of the regularly scheduled class are done through Zoom meetings.
 ---
 ### Machine Learning Model and Data Scrape
-[Metacritic_ETL.ipynb](./Notebooks/Metacritic_Scraping_Pipeline.ipynb)
+[Metacritic_ETL.ipynb](./Notebooks/Metacritic_ETL.ipynb)
 * scraped data from metacritic.com
 * performed ETL on the data and imported it into Postgres using SQL Alchemy.
 * exported data to a csv file for later use.
 
-[Metacritic_Comment_Scraping.ipynb](./Notebooks/Metacritic_Scraping_Pipeline.ipynb)
+[Metacritic_CriticReviews_Scraping.ipynb](./Notebooks/Metacritic_CriticReviews_Scraping.ipynb)
 * scraped review data from metacritic.com
 * performed ETL on the data and imported it into Postgres using SQL Alchemy.
 * exported data to a tab-delimited csv file for later use.
@@ -59,6 +52,7 @@ C. How does demographic / location effect video game sales?
 * clustered data using KMeans
 * created a deep artificial neural network to predict Sales.
 
+
 [Clustering_Class_Module.py](./Notebooks/Clustering_Class_Module.py)
 * .py file containing the class for clustering features using KMeans
 * takes in X and y and uses a set of methods to choose the best k value and cluster the model
@@ -69,11 +63,9 @@ C. How does demographic / location effect video game sales?
 * takes in X an y and uses a set of methods to split the data into training/testing sets as well as scale the data and create a model which we then make predictions off of.
 * Is imported into Predicting_Sales.ipynb.
 
-NOTE: Descriptions of the machine learning deliverables process can be
-found in the notebook itself written in markdown language inbetween the code
-and in code comments.
+NOTE: Descriptions of the machine learning deliverables process is provided in code commments and markdown.
 
-Machine Learning Description:
+#### Machine Learning Description:
 
 To make accurate predictions using the model we did feature engineering on the
 release date column to get new features for year and month. The month a game is
@@ -123,7 +115,7 @@ function of qualities of the game that are much more subtle. A good game can com
 ---
 
 ### Database
-* Imported table from postgres to [Deep_Learning.ipynb](./Notebooks/Deep_Learning.ipynb) using sqlalchemy
+* Imported table from postgres to [Deep_Learning_Model.ipynb](./Notebooks/Deep_Learning_Model.ipynb) using sqlalchemy
 * Designed database ([schema](./Database/schema.sql))
 
   #### ERD
@@ -148,11 +140,13 @@ Import
 ---
 #### Segment 1
 * Database
-  * Imported table from postgres to [Deep_Learning.ipynb](./Notebooks/Deep_Learning.ipynb) using sqlalchemy
+  * Imported table from postgres to [Deep_Learning_Model.ipynb](./Notebooks/Deep_Learning_Model.ipynb) using sqlalchemy
   * Designed database ([schema](./Database/schema.sql))
 #### Segment 2
 * Database
+  * Drafted various ERD and updated schema with Michelle
 * Dashboard
+  * Created dashboard blueprint with tableau
 #### Segment 3
 #### Segment 4
 ---
@@ -163,18 +157,18 @@ Import
 * scraped data from metacritic.com
 * exported data to a csv file for later use.
 
-[Exploratory_Data_Analysis.ipynb](./Notebooks/Exploratory_Data_Analysis.ipynb)
+[Exploratory_Analysis.ipynb](./Notebooks/Exploratory_Analysis.ipynb)
 * cleaned data
 * merged our scraped data as well as the game data from vgsales.csv
 * exported data using sqlalchemy to postgres
 
-[Deep_Learning.ipynb](./Notebooks/Deep_Learning.ipynb)
+[Deep_Learning_Model.ipynb](./Notebooks/Deep_Learning_Model.ipynb)
 * performed feature engineering
 * scaled data
 * created a deep artificial neural network
 
 #### Segment 2
-[Metacritic_Comment_Scraping](./Notebooks/Metacritic_Comment_Scraping)
+[Metacritic_Comment_Scraping](./Notebooks/Metacritic_Comment_Scraping.ipynb)
 * added another scraping script to gather review data for later use with NLP.
 
 * altered the scraping scripts to upload into the new Postgres database schema.
@@ -249,6 +243,14 @@ I was also responsible for all the text (and code) under the machine learning po
   * Updated schema and ERD with Blake.
   * Created created queries file.
 #### Segment 3
+* GitHub
+  * Fixed broken links and images.
+* Database
+  * Updated queries file to join data and create a table for export into the ML notebook.
+  * Imported Metacritic critic review scraping to the database
+* Metacritic_CriticReviews_Scraping.ipynb
+  * Updated notebook to add critic names.
+  * Cleaned dataset to only include game/platform combos present in the game_platform_release table in the database.
 #### Segment 4
 ---
 ### Nicholas Singh
