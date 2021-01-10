@@ -52,12 +52,22 @@ C. How does demographic / location effect video game sales?
 * merged our scraped data as well as the game data from vgsales.csv
 * exported data using sqlalchemy to postgres
 
-[Deep_Learning_Model.ipynb](./Notebooks/Deep_Learning_Model.ipynb)
+[Predicting_Sales.ipynb](./Notebooks/Deep_Learning_Model.ipynb)
 * performed feature engineering
 * used Random Forest to interpolate missing values in the dataset.
 * scaled the data for supervised and unsupervised Learning
 * clustered data using KMeans
 * created a deep artificial neural network to predict Sales.
+
+[Clustering_Class_Module.py](./Notebooks/Clustering_Class_Module.py)
+* .py file containing the class for clustering features using KMeans
+* takes in X and y and uses a set of methods to choose the best k value and cluster the model
+* Is imported into Predicting_Sales.ipynb.
+
+[Keras_Class_Module.py](./Notebooks/Keras_Class_Module.py)
+* .py file containing the class for instantiating a deep neural network.
+* takes in X an y and uses a set of methods to split the data into training/testing sets as well as scale the data and create a model which we then make predictions off of.
+* Is imported into Predicting_Sales.ipynb.
 
 NOTE: Descriptions of the machine learning deliverables process can be
 found in the notebook itself written in markdown language inbetween the code
@@ -95,6 +105,20 @@ each category of Sales, yet still was not getting great results.  I opted to see
 could make accurate predictions for just one region, North America Sales (NA_Sales). The
 results were far better, supporting my hypothesis but the model as a whole was still
 not a great predictor.  
+
+#### Factors that limited the efficacy of the models
+* Sales data was too rightly-skewed
+* The features we used were simply not good predictors of Sales, even when taken in aggregate.
+* Gamer's attitudes towards a given games, and thus sales, cannot be adequately encapsulated by generic features. Ultimately, whether a game is popular or not is a
+function of qualities of the game that are much more subtle. A good game can come from anywhere.
+
+#### Features that could strengthen the models
+* Sales data that is more granular could help to strengthen the model. "Japan Sales" or "North American Sales" is still too broad of a category to predict accurately.
+* A more even spread of the Sales data that is less right-skewed.
+* A subset of games that are more current and have more in common.
+
+
+* NOTE: The developer column in the combo_df file was corrupted at some point. The script still works, but all values are null.
 
 ---
 
