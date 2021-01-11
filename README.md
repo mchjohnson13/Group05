@@ -148,6 +148,8 @@ Import
 * Dashboard
   * Created dashboard blueprint with tableau
 #### Segment 3
+* Created dashboard that includes initial analysis and Machine learning Model examples
+  * Dashboard Link: https://public.tableau.com/profile/blake2039#!/vizhome/VideoGamesSalesAnalysis_16103300424700/VideoGameAnalysis?publish=yes
 #### Segment 4
 ---
 ### Joseph Thompson (NOTE: Branch name is "New_Branch")
