@@ -228,6 +228,7 @@ I was also responsible for all the text (and code) under the machine learning po
 #### Segment 2
 * Slides and Presentation: Began first phase of presentation organization and editing.
 #### Segment 3
+* Slides and Presentation: Coordinated with group to include and emphasize relevant presentation material
 #### Segment 4
 ---
 ### Michelle Johnson
