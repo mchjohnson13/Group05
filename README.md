@@ -104,7 +104,7 @@ Import
 
 ---
 ### Dashboard
-
+* Dashboard Link: https://public.tableau.com/profile/blake2039#!/vizhome/VideoGamesSalesAnalysis_16103300424700/VideoGameAnalysis?publish=yes
 ---
 
 ## Responisbilites
