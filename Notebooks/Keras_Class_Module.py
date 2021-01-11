@@ -22,7 +22,7 @@ import pandas as pd
 
 class DeepLearning():
     
-    def __init__(self, X, y, regression_type, drop="None", input_dim=5, output_shape=5, optimizer="adam", activation="relu"):
+    def __init__(self, X, y, regression_type, units=20, hidden_layers=1, drop="None", input_dim=5, output_shape=5, optimizer="adam", activation="relu"):
         self.X = X
         self.y = y
         self.input_dim = input_dim
@@ -30,8 +30,10 @@ class DeepLearning():
         self.optimizer = optimizer
         self.output_shape = output_shape
         self.model_split()
-        self.regression_type=regression_type
+        self.regression_type = regression_type
         self.drop = drop
+        self.units=units
+        self.hidden_layers = hidden_layers
         
     def model_split(self):
         X_train, X_test, y_train, y_test = train_test_split(self.X, self.y, train_size=.7)
@@ -46,8 +48,9 @@ class DeepLearning():
     def make_model(self):
         model = tf.keras.models.Sequential()
         
-        model.add(tf.keras.layers.Dense(20, activation=self.activation, input_dim= self.input_dim))
-        model.add(tf.keras.layers.Dense(20, activation=self.activation))
+        model.add(tf.keras.layers.Dense(self.units, activation=self.activation, input_dim= self.input_dim))
+        for x in range(self.hidden_layers):
+            model.add(tf.keras.layers.Dense(self.units, activation=self.activation))
         
         model.add(tf.keras.layers.Dense(self.output_shape))
         self.model = model
