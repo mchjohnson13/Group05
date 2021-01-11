@@ -231,12 +231,19 @@ Metacritic_Comment_Scraping.ipynb
 ### Nicholas Singh
 ---
 #### Segment 1
-* Reason for Selection
-* Questions to Answer
+* ReadME
+  * Reason for Selection
+  * Questions to Answer
 
 #### Segment 2
 * Slides and Presentation
-    * Added multiple images along with multiple slides explaining the processes behind the data source, exploration and analysis.
+    * Included multiple images along with multiple slides explaining the processes behind the data source, exploration and analysis.
+* ReadME
+    * Included more information about the topic and background information.
 #### Segment 3
+* Slides and Presentation
+    * Included more slides to help emphasize the impact of the gaming industry and its users.
+
+    * Includd additional information to the slides to further explain the processes and tools used in order to analyze the data.
 #### Segment 4
 ---
