@@ -45,13 +45,12 @@ C. How does demographic / location effect video game sales?
 * merged our scraped data as well as the game data from vgsales.csv
 * exported data using sqlalchemy to postgres
 
-[Predicting_Sales.ipynb](./Notebooks/Deep_Learning_Model.ipynb)
+[Predicting_Sales.ipynb](./Notebooks/Predicting_Sales.ipynb)
 * performed feature engineering
 * used Random Forest to interpolate missing values in the dataset.
 * scaled the data for supervised and unsupervised Learning
 * clustered data using KMeans
 * created a deep artificial neural network to predict Sales.
-
 
 [Clustering_Class_Module.py](./Notebooks/Clustering_Class_Module.py)
 * .py file containing the class for clustering features using KMeans
@@ -67,49 +66,23 @@ NOTE: Descriptions of the machine learning deliverables process is provided in c
 
 #### Machine Learning Description:
 
-To make accurate predictions using the model we did feature engineering on the
-release date column to get new features for year and month. The month a game is
-released may have some correlation with the overall sales. Then we cleaned the dataset
-and used ensemble learning to interpolate missing values. Our data was very dirty so
-I used unsupervised learning to try to glean insights and patterns about our data.
-The takeaway was that there is only a loose correlation between reviews and Sales.
-I opted to not include Developer and Producers into the deep learning model because
-even after binning there were simply too many categories to one hot encode into the
-model.
-
-I knew the data was dirty and therefore would take some fiddling with input data
-to arrive at a good model so I incorporated OOP (Object-Oriented Programming) to
-make this process less cluttered in the notebook. Data is then split within one of
-the DeepLearning class's methods.
-
-I am choosing a neural network, because they are adept at picking up subtle correlations between combinations of features and the label. Our data is attempting to predict a label off of features that appear only loosing correlated with Sales. My hope is that the deep learning model can pick up subtle patterns from all this review data along with our other features to make accurate predictions about sales. A limitation of this Model
-will be that I cant fully understand what is happening inside the model. I think
-this will be outweighed however by the benefits relating to the patterns and relationships
-it will be able to pick up.
-
-I determined that for several reasons this data may be unfit to predict sales on.
-The Sales data is biased in favor of games that have been out longer because they
-have more time to accumulate sales. Most games in the data has near zero sales, with
-a not insignificant proportion of games selling much more. Our model therefore can
-be trained to be a good predictor of games perhaps in one range or another but not both.
-To account for this, I dropped all the games that could be considered outliers for
-each category of Sales, yet still was not getting great results.  I opted to see if I
-could make accurate predictions for just one region, North America Sales (NA_Sales). The
-results were far better, supporting my hypothesis but the model as a whole was still
-not a great predictor.  
+Feature engineering was performed on  the release data column, to make accurate predictions using the model. This showed that there may be some correlation between the monthe of release of a game and the overall sales of that game. Then, the dataset was cleaned and used ensemble learning to interpolate missing values. Because the raw data was messy, unsupervised learning was used to try to glean insights and patterns about the data. Overall, this process showed that there is only a loose correlation between reviews and Sales. Developer and Producer were not included into the deep learning model because there too many categories to one hot encode into the model, even after binning the data. Because of how dirty the dataset was, OOP (Object-Oriented Programming) was incorperated into the code. This allowed for a less cluttered notebook as input data was manipulated to arrive at a good model. Data was then split within one of the DeepLearning class's methods.  
+  
+Neural network was chosen, because they are adept at picking up subtle correlations between combinations of features and the label. Although this will be predicting a label using features that appear only loosly correlated with Sales, this deep learning model may be able to pick up subtle patterns from all this review data along with other features to make accurate predictions about sales. A limitation of this model is the lack of visibility into how the data is processed, but this is  outweighed by the benefits of the patterns and relationships it can pick up.  
+  
+It was determined that this data may be unfit for predicting overall game sales. The Sales data is biased in favor of games that have been out longer because they have more time to accumulate sales. Most games in the data have near zero sales, with a significant portion of games selling much more. Our model therefore can be trained to be a good predictor of games perhaps in one range or another but not both. To account for this, all games that could be considered outliers for each category of Sales were dropped, but results were only minorly improved.  Next, data was processed using a single region, North America Sales (NA_Sales). The results were far better, supporting the hypothesis, but the model as a whole was still not a great predictor.  
 
 #### Factors that limited the efficacy of the models
 * Sales data was too rightly-skewed
-* The features we used were simply not good predictors of Sales, even when taken in aggregate.
+* The features used were simply not good predictors of Sales, even when taken in aggregate.
 * Gamer's attitudes towards a given games, and thus sales, cannot be adequately encapsulated by generic features. Ultimately, whether a game is popular or not is a
 function of qualities of the game that are much more subtle. A good game can come from anywhere.
 
 #### Features that could strengthen the models
 * Sales data that is more granular could help to strengthen the model. "Japan Sales" or "North American Sales" is still too broad of a category to predict accurately.
 * A more even spread of the Sales data that is less right-skewed.
-* A subset of games that are more current and have more in common.
-
-
+* A subset of games that are more current and have more in common.  
+  
 * NOTE: The developer column in the combo_df file was corrupted at some point. The script still works, but all values are null.
 
 ---
@@ -170,9 +143,7 @@ Import
 * created a deep artificial neural network
 
 #### Segment 2
-[Metacritic_Comment_Scraping](./Notebooks/Metacritic_Comment_Scraping.ipynb)
-* added another scraping script to gather review data for later use with NLP.
-
+* added another scraping script (Metacritic_Comment_Scraping.ipynb) to gather review data for later use with NLP.
 * altered the scraping scripts to upload into the new Postgres database schema.
 * added unsupervised clustering models to Deep_Learning_Model.ipynb
 * Used Random Forest to interpolate missing values in the MI dataset.
@@ -187,12 +158,12 @@ I was responsible for all the code in these notebooks.
 
 I was also responsible for all the text (and code) under the machine learning portion of the repository.
 
-[Metacritic_ETL.ipynb](./Notebooks/Metacritic_Scraping_Pipeline.ipynb)
+[Metacritic_ETL.ipynb](./Notebooks/Metacritic_ETL.ipynb)
 * scraped data from metacritic.com
 * performed ETL on the data and imported it into Postgres using SQL Alchemy.
 * exported data to a csv file for later use.
 
-[Metacritic_Comment_Scraping.ipynb](./Notebooks/Metacritic_Scraping_Pipeline.ipynb)
+Metacritic_Comment_Scraping.ipynb
 * scraped review data from metacritic.com
 * performed ETL on the data and imported it into Postgres using SQL Alchemy.
 * exported data to a tab-delimited csv file for later use.
@@ -202,7 +173,7 @@ I was also responsible for all the text (and code) under the machine learning po
 * merged our scraped data as well as the game data from vgsales.csv
 * exported data using sqlalchemy to postgres
 
-[Predicting_Sales.ipynb](./Notebooks/Deep_Learning_Model.ipynb)
+[Predicting_Sales.ipynb](./Notebooks/Predicting_Sales.ipynb)
 * performed feature engineering
 * used Random Forest to interpolate missing values in the dataset.
 * scaled the data for supervised and unsupervised Learning
@@ -248,6 +219,7 @@ I was also responsible for all the text (and code) under the machine learning po
 #### Segment 3
 * GitHub
   * Fixed broken links and images.
+  * Edited content 
 * Database
   * Updated queries file to join data and create a table for export into the ML notebook.
   * Imported Metacritic critic review scraping to the database
