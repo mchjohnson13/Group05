@@ -110,6 +110,9 @@ Import
 ### Dashboard
 * Dashboard Link: https://public.tableau.com/profile/blake2039#!/vizhome/VideoGamesSalesAnalysis_16103300424700/VideoGameAnalysis?publish=yes
 ---
+### Presentation
+* [Predicting_the_Future_of_Gaming.pdf](Predicting_the_Future_of_Gaming.pdf)
+---
 
 ## Responisbilites
 ---
