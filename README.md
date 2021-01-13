@@ -129,7 +129,7 @@ Import
   * Dashboard Link: https://public.tableau.com/profile/blake2039#!/vizhome/VideoGamesSalesAnalysis_16103300424700/VideoGameAnalysis?publish=yes
 #### Segment 4
 ---
-### Joseph Thompson (NOTE: Branch name is "New_Branch")
+### Joseph Thompson
 ---
 #### Segment 1
 Metacritic_Scraping_Pipeline.ipynb
