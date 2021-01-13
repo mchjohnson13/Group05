@@ -231,7 +231,7 @@ Metacritic_Comment_Scraping.ipynb
   * Imported Metacritic critic review scraping to the database
 * Metacritic_CriticReviews_Scraping.ipynb
   * Updated notebook to add critic names.
-  * Cleaned dataset to only include game/platform combos present in the game_platform_release table in the database.
+  * Performed ETL on the data and imported it into Postgres using SQL Alchemy.
 #### Segment 4
 ---
 ### Nicholas Singh
