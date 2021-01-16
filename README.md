@@ -131,6 +131,9 @@ Import
 * Created dashboard that includes initial analysis and Machine learning Model examples
   * Dashboard Link: https://public.tableau.com/profile/blake2039#!/vizhome/VideoGamesSalesAnalysis_16103300424700/VideoGameAnalysis?publish=yes
 #### Segment 4
+* Dashboard edits
+  * Machine learning layout change with added charts
+  * svg added and link updated
 ---
 ### Joseph Thompson
 ---
