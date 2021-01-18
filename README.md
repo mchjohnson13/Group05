@@ -229,6 +229,8 @@ Machine Learning Section of the README.
 #### Segment 3
 * Slides and Presentation: Coordinated with group to include and emphasize relevant presentation material
 #### Segment 4
+* Modified slides according to updated guidelines 
+* Assisted in ensuring that slides were organized for seamless presentation
 ---
 ### Michelle Johnson
 ---
