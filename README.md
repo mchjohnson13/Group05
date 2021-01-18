@@ -62,6 +62,10 @@ C. How does demographic / location effect video game sales?
 * takes in X an y and uses a set of methods to split the data into training/testing sets as well as scale the data and create a model which we then make predictions off of.
 * Is imported into Predicting_Sales.ipynb.
 
+[Spark_NLP.ipynb](./Notebooks/Spark_NLP.ipynb)
+* Natural Language Processing was performed using Spark and fed the resulting features into Random Forest Regression and Linear Regression models to predict the Metacritic score based on the the critic reviews.
+* Random Forest Regression and Linear Regression algorithms were from the pyspark.ml library.
+
 NOTE: Descriptions of the machine learning deliverables process is provided in code commments and markdown.
 
 #### Machine Learning Description:
@@ -88,7 +92,7 @@ function of qualities of the game that are much more subtle. A good game can com
 ---
 
 ### Database
-* Imported table from postgres to [Deep_Learning_Model.ipynb](./Notebooks/Deep_Learning_Model.ipynb) using sqlalchemy
+* Imported table from postgres to Deep_Learning_Model.ipynb using sqlalchemy
 * Designed database ([schema](./Database/schema.sql))
 
   #### ERD
@@ -106,6 +110,10 @@ Import
 ### Dashboard
 * Dashboard Link: https://public.tableau.com/profile/blake2039#!/vizhome/VideoGamesSalesAnalysis_16103300424700/VideoGameAnalysis?publish=yes
 ---
+### Presentation
+* [Predicting_the_Future_of_Gaming.pdf](Predicting_the_Future_of_Gaming.pdf)
+* https://docs.google.com/presentation/d/1gBLTJq7JaADqEFnL-K6WFH7yn2OQTsYpzkRoj1cnYbk/edit?usp=sharing
+---
 
 ## Responisbilites
 ---
@@ -113,7 +121,7 @@ Import
 ---
 #### Segment 1
 * Database
-  * Imported table from postgres to [Deep_Learning_Model.ipynb](./Notebooks/Deep_Learning_Model.ipynb) using sqlalchemy
+  * Imported table from postgres to Deep_Learning_Model.ipynb using sqlalchemy
   * Designed database ([schema](./Database/schema.sql))
 #### Segment 2
 * Database
@@ -124,20 +132,23 @@ Import
 * Created dashboard that includes initial analysis and Machine learning Model examples
   * Dashboard Link: https://public.tableau.com/profile/blake2039#!/vizhome/VideoGamesSalesAnalysis_16103300424700/VideoGameAnalysis?publish=yes
 #### Segment 4
+* Dashboard edits
+  * Machine learning layout change with added charts
+  * svg added and link updated
 ---
-### Joseph Thompson (NOTE: Branch name is "New_Branch")
+### Joseph Thompson
 ---
 #### Segment 1
-[Metacritic_Scraping_Pipeline.ipynb](./Notebooks/Metacritic_Scraping_Pipeline.ipynb)
+Metacritic_Scraping_Pipeline.ipynb
 * scraped data from metacritic.com
 * exported data to a csv file for later use.
 
-[Exploratory_Analysis.ipynb](./Notebooks/Exploratory_Analysis.ipynb)
+Exploratory_Analysis.ipynb
 * cleaned data
 * merged our scraped data as well as the game data from vgsales.csv
 * exported data using sqlalchemy to postgres
 
-[Deep_Learning_Model.ipynb](./Notebooks/Deep_Learning_Model.ipynb)
+Deep_Learning_Model.ipynb
 * performed feature engineering
 * scaled data
 * created a deep artificial neural network
@@ -150,7 +161,6 @@ Import
 * implemented object-oriented programming into Keras deep learning models and clustering models
 * wrote commentary into Deep_Learning_Model.ipynb that explains preprocessing, feature selection, why I chose the models i did, and all other details relating to the machine learning deliverable.
 * Wrote an overview of the Machine Learning sections of the project in the README.md file that meet the requirements of the deliverable in conjunction with the notes written in with the code.
-
 
 #### Segment 3
 
@@ -190,6 +200,9 @@ Metacritic_Comment_Scraping.ipynb
 * takes in X an y and uses a set of methods to split the data into training/testing sets as well as scale the data and create a model which we then make predictions off of.
 * Is imported into Predicting_Sales.ipynb.
 
+[Spark_NLP.ipynb](./Notebooks/Spark_NLP.ipynb)
+* Natural Language Processing was performed using Spark and fed the resulting features into Random Forest Regression and Linear Regression models to predict the Metacritic score based on the the critic reviews.
+* Random Forest Regression and Linear Regression algorithms were from the pyspark.ml library.
 
 #### Segment 4
 ---
@@ -225,8 +238,9 @@ Metacritic_Comment_Scraping.ipynb
   * Imported Metacritic critic review scraping to the database
 * Metacritic_CriticReviews_Scraping.ipynb
   * Updated notebook to add critic names.
-  * Cleaned dataset to only include game/platform combos present in the game_platform_release table in the database.
+  * Performed ETL on the data and imported it into Postgres using SQL Alchemy.
 #### Segment 4
+* GitHub management
 ---
 ### Nicholas Singh
 ---
@@ -243,7 +257,10 @@ Metacritic_Comment_Scraping.ipynb
 #### Segment 3
 * Slides and Presentation
     * Included more slides to help emphasize the impact of the gaming industry and its users.
-
     * Includd additional information to the slides to further explain the processes and tools used in order to analyze the data.
 #### Segment 4
+
+* Slides and Presentation
+* Organized the presentation order and kept track of timing of each individual.
+*  Included more slides to clarify the tools used and a self assesment which discusses the flaws of the project adn where we could have done better.
 ---
