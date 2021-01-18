@@ -112,6 +112,7 @@ Import
 ---
 ### Presentation
 * [Predicting_the_Future_of_Gaming.pdf](Predicting_the_Future_of_Gaming.pdf)
+* https://docs.google.com/presentation/d/1gBLTJq7JaADqEFnL-K6WFH7yn2OQTsYpzkRoj1cnYbk/edit?usp=sharing
 ---
 
 ## Responisbilites
@@ -257,4 +258,8 @@ Metacritic_Comment_Scraping.ipynb
     * Included more slides to help emphasize the impact of the gaming industry and its users.
     * Includd additional information to the slides to further explain the processes and tools used in order to analyze the data.
 #### Segment 4
+
+* Slides and Presentation
+* Organized the presentation order and kept track of timing of each individual.
+*  Included more slides to clarify the tools used and a self assesment which discusses the flaws of the project adn where we could have done better.
 ---
