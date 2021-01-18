@@ -71,9 +71,9 @@ NOTE: Descriptions of the machine learning deliverables process is provided in c
 #### Machine Learning Description:
 
 Feature engineering was performed on  the release data column, to make accurate predictions using the model. This showed that there may be some correlation between the monthe of release of a game and the overall sales of that game. Then, the dataset was cleaned and used ensemble learning to interpolate missing values. Because the raw data was messy, unsupervised learning was used to try to glean insights and patterns about the data. Overall, this process showed that there is only a loose correlation between reviews and Sales. Developer and Producer were not included into the deep learning model because there too many categories to one hot encode into the model, even after binning the data. Because of how dirty the dataset was, OOP (Object-Oriented Programming) was incorperated into the code. This allowed for a less cluttered notebook as input data was manipulated to arrive at a good model. Data was then split within one of the DeepLearning class's methods.  
-  
+
 Neural network was chosen, because they are adept at picking up subtle correlations between combinations of features and the label. Although this will be predicting a label using features that appear only loosly correlated with Sales, this deep learning model may be able to pick up subtle patterns from all this review data along with other features to make accurate predictions about sales. A limitation of this model is the lack of visibility into how the data is processed, but this is  outweighed by the benefits of the patterns and relationships it can pick up.  
-  
+
 It was determined that this data may be unfit for predicting overall game sales. The Sales data is biased in favor of games that have been out longer because they have more time to accumulate sales. Most games in the data have near zero sales, with a significant portion of games selling much more. Our model therefore can be trained to be a good predictor of games perhaps in one range or another but not both. To account for this, all games that could be considered outliers for each category of Sales were dropped, but results were only minorly improved.  Next, data was processed using a single region, North America Sales (NA_Sales). The results were far better, supporting the hypothesis, but the model as a whole was still not a great predictor.  
 
 #### Factors that limited the efficacy of the models
@@ -86,8 +86,18 @@ function of qualities of the game that are much more subtle. A good game can com
 * Sales data that is more granular could help to strengthen the model. "Japan Sales" or "North American Sales" is still too broad of a category to predict accurately.
 * A more even spread of the Sales data that is less right-skewed.
 * A subset of games that are more current and have more in common.  
-  
+
 * NOTE: The developer column in the combo_df file was corrupted at some point. The script still works, but all values are null.
+
+# Incorporating Statistics
+* Statistical methods should be used next time in order to further explore underlying issues with the gathered
+data. Upon discovery of these issues that will confuse the Keras model, further data should then be collected or
+thrown out to create a balanced dataset.
+* Numbers should be run to determine the spread of values among all of the features to be used.
+* Basic statistics could solve a lot of the problems we were trying to ask, and in a way, this problem didn't really necessitate the use of a machine learning model. If we wanted to know which genres appeared to be more
+popular in a given region, we could have just compared the Sales between regions for a given genre using Pandas.
+* While the model does attempt to address the question of which games will be most popular where, the data we
+were working with comes far short of actually being able to give us those insights, regardless of what type of machine learning model is used.
 
 ---
 
@@ -205,6 +215,9 @@ Metacritic_Comment_Scraping.ipynb
 * Random Forest Regression and Linear Regression algorithms were from the pyspark.ml library.
 
 #### Segment 4
+Added some clarifications into the README.md. Added the "Incorporating Statistics" section under the
+Machine Learning Section of the README.
+
 ---
 ### Maria Castellanos
 ---
@@ -232,7 +245,7 @@ Metacritic_Comment_Scraping.ipynb
 #### Segment 3
 * GitHub
   * Fixed broken links and images.
-  * Edited content 
+  * Edited content
 * Database
   * Updated queries file to join data and create a table for export into the ML notebook.
   * Imported Metacritic critic review scraping to the database
