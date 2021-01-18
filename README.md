@@ -240,6 +240,7 @@ Metacritic_Comment_Scraping.ipynb
   * Updated notebook to add critic names.
   * Performed ETL on the data and imported it into Postgres using SQL Alchemy.
 #### Segment 4
+* GitHub management
 ---
 ### Nicholas Singh
 ---
